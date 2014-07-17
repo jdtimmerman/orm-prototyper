@@ -1,0 +1,104 @@
+DEBUG Settings:37 - Loading properties from /settings.properties
+DEBUG Lang:42 - Setting locale Nederlands (Nederland)
+DEBUG Lang:42 - Setting locale nl
+ INFO BatikGui:64 - Using locale: nl
+ INFO BatikGui:70 - Using log level: DEBUG
+ INFO BatikGui:78 - Checking nl.ru.jtimmerm
+ INFO BatikGui:78 - Checking nl.ru.jtimmerm.BatikGui
+ INFO BatikGui:80 - Setting logger nl.ru.jtimmerm.BatikGui to level DEBUG
+ INFO BatikGui:78 - Checking nl.ru.jtimmerm.controller.Controller
+DEBUG Settings:37 - Loading properties from /settings.properties
+DEBUG Lang:42 - Setting locale Nederlands (Nederland)
+DEBUG Lang:42 - Setting locale nl
+ INFO BatikGui:93 - Installing demo data
+DEBUG Controller:347 - Creating first sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Player is represented by Token"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Token
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player is represented by Token
+DEBUG Model:98 - Searching for objecttype with content: Player
+DEBUG Model:98 - Searching for objecttype with content: Token
+DEBUG Model:111 - Searching for facttype with verbalization: Player is represented by Token
+DEBUG Controller:364 - Creating second sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Player bought Street in Turn"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Street
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Turn
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player bought Street in Turn
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG Model:98 - Searching for objecttype with content: Street
+DEBUG Model:98 - Searching for objecttype with content: Turn
+DEBUG Model:111 - Searching for facttype with verbalization: Player bought Street in Turn
+DEBUG Controller:379 - Creating third sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Street is worth AmountOfMoney"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Street is worth AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG Model:98 - Searching for objecttype with content: AmountOfMoney
+DEBUG Model:111 - Searching for facttype with verbalization: Street is worth AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+ INFO BatikGui:64 - Using locale: nl
+ INFO BatikGui:70 - Using log level: DEBUG
+DEBUG Settings:37 - Loading properties from /settings.properties
+DEBUG Lang:42 - Setting locale Nederlands (Nederland)
+DEBUG Lang:42 - Setting locale nl
+ INFO BatikGui:82 - Installing demo data
+DEBUG Controller:347 - Creating first sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Player is represented by Token"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Token
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player is represented by Token
+DEBUG Model:98 - Searching for objecttype with content: Player
+DEBUG Model:98 - Searching for objecttype with content: Token
+DEBUG Model:111 - Searching for facttype with verbalization: Player is represented by Token
+DEBUG Controller:364 - Creating second sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Player bought Street in Turn"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Street
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Turn
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Player bought Street in Turn
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG Model:98 - Searching for objecttype with content: Street
+DEBUG Model:98 - Searching for objecttype with content: Turn
+DEBUG Model:111 - Searching for facttype with verbalization: Player bought Street in Turn
+DEBUG Controller:379 - Creating third sentence of demo data
+DEBUG ParseUtil:41 - Parseren: "Street is worth AmountOfMoney"
+DEBUG AbstractShapeMapper:268 - Maak vorm voor AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG AbstractShapeMapper:268 - Maak vorm voor Street is worth AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG Model:98 - Searching for objecttype with content: AmountOfMoney
+DEBUG Model:111 - Searching for facttype with verbalization: Street is worth AmountOfMoney
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [false, true, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false, true]
+DEBUG FactTypeSVGShape:156 - Creating Shape for UC: [true, false]
+ INFO BatikGui:64 - Using locale: nl
+ INFO BatikGui:70 - Using log level: INFO
+ INFO BatikGui:82 - Installing demo data

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="nl.ru.jtimmerm.orm.IModelListener" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/IModelListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="361" y="38" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="nl.ru.jtimmerm.orm.IModelObservable" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/IModelObservable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="112" y="125" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="nl.ru.jtimmerm.orm.IModel" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/IModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="247" y="102" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="nl.ru.jtimmerm.orm.IModelUpdates" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/IModelUpdates.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="112" y="77" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="nl.ru.jtimmerm.orm.types.IFactType" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/types/IFactType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="498" y="125" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="nl.ru.jtimmerm.orm.types.IObjectType" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/types/IObjectType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="498" y="77" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="nl.ru.jtimmerm.orm.Model" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/Model.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="360" y="102" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="8">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="9" name="mModelListeners"/>      
+      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <association id="12">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="13" name="mObjects"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="16" name="mFacts"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <realization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

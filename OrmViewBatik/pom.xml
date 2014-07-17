@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>batik</artifactId>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>nl.ru.jtimmerm.orm</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+		<!-- LOGGING -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+
+		<!-- BATIK -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-swing</artifactId>
+			<version>${batik-version}</version>
+		</dependency>
+
+		<!-- ORM -->
+		<dependency>
+			<groupId>nl.ru.jtimmerm.orm</groupId>
+			<artifactId>controller</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nl.ru.jtimmerm.orm</groupId>
+			<artifactId>view-api</artifactId>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>nl.ru.jtimmerm.BatikGui</mainClass>
+						</manifest>
+					</archive>
+					<classifier>bin</classifier>
+					<appendAssemblyId>false</appendAssemblyId>
+					<finalName>OrmPrototyper</finalName>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

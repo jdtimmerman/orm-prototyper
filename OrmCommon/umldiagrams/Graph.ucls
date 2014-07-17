@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="nl.ru.jtimmerm.view.graph.IGraph" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/IGraph.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="111" y="119" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="nl.ru.jtimmerm.view.graph.IShapeMapper" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/IShapeMapper.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="281" y="119" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="nl.ru.jtimmerm.view.graph.AbstractGraph" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/AbstractGraph.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="110" y="184" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="nl.ru.jtimmerm.view.graph.AbstractShapeMapper" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/AbstractShapeMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position x="281" y="184" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="nl.ru.jtimmerm.view.graph.shapes.AbstractShapeElement" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/shapes/AbstractShapeElement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position x="478" y="184" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="nl.ru.jtimmerm.view.graph.shapes.IShapeElement" project="OrmViewAPI" 
+    file="/OrmViewAPI/src/main/java/nl/ru/jtimmerm/view/graph/shapes/IShapeElement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position x="478" y="119" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="7" language="java" name="nl.ru.jtimmerm.orm.types.IType" project="OrmLibraryAPI" 
+    file="/OrmLibraryAPI/src/main/java/nl/ru/jtimmerm/orm/types/IType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position x="478" y="250" width="-1" height="-1"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <realization id="8">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="9">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="10" name="mMap"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <realization id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="mType"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <realization id="16">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="17">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="18" name="mShapeMapper"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="false" multiplicity="true"/>
+</class-diagram>

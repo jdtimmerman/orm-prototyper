@@ -1,0 +1,11 @@
+# Exclude temp backups
+*~
+
+# Exclude maven builds
+target
+
+# Exclude eclipse files
+.settings
+.classpath
+.metadata
+.project
