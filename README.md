@@ -23,4 +23,4 @@ There is no user guide, the application should be fairly straight-forward for an
 
 Development
 ----
-This project is open source, but I have not decided on a licence yet. I'd  like any derivate work to be open source as well,  but I'm afraid it would reduce the number of developers to consider using this. Any wisdom on this is welcome.
+This project is open source, you can use any of it under the GPLv3 license.
