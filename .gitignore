@@ -1,8 +1,9 @@
 # Exclude temp backups
 *~
 
-# Exclude maven builds
+# Exclude java/maven builds
 target
+bin
 
 # Exclude eclipse files
 .settings
