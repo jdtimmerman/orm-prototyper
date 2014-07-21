@@ -18,8 +18,19 @@ The project is using maven so it should be pretty easy to build it yourself. To 
     
     # Start the application
     $ java -jar OrmViewBatik/target/OrmPrototyper.jar
-    
+
+The application supports a couple of arguments
+
+	java -jar OrmPrototyper.jar [locale] [debug-level] [insertDemoData]
+		locale        	Start with the given locale (e.g. nl_NL or en_US)
+		debug-level   	Log with the given level (e.g. warn, debug, info) 
+		insertDemoData	Insert an example diagram (any strings flags this value as true)
+
 There is no user guide, the application should be fairly straight-forward for anyone with a bit of knowledge about ORM. Don't let your domain experts using this without any explanation though (read the thesis to know why).
+
+Screenshot
+----
+![Screenshot of the application showing a model of the Monopoly game](Screenshot.png)
 
 Development
 ----
